@@ -1,0 +1,44 @@
+{
+	"name": "latency",
+	"displayName": "latency",
+	"publisher": "LeuisKen",
+	"description": "Measure VS Code Extension Host Latency",
+	"version": "1.0.0",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/LeuisKen/vscode-latency.git"
+	},
+	"engines": {
+		"vscode": "^1.40.0"
+	},
+	"extensionKind": [
+		"workspace"
+	],
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension.js",
+	"contributes": {},
+	"scripts": {
+		"vscode:prepublish": "yarn run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"package": "vsce package"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.7",
+		"@types/node": "^12.11.7",
+		"@types/vscode": "1.40.0",
+		"glob": "^7.1.5",
+		"mocha": "^6.2.2",
+		"tslint": "^5.20.0",
+		"typescript": "^3.6.4",
+		"vsce": "^1.75.0",
+		"vscode-test": "^1.2.2"
+	}
+}
